@@ -1,34 +1,173 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Leadleaders - Business Consulting & Support</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lead Leaders - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -10px rgba(0, 13, 255, 0.6);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md py-4 px-6 flex items-center justify-between sticky top-0 z-50">
+        <div class="flex items-center space-x-2">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/22bc9a36-1a27-4852-9674-4d8f35ee55f9.png" alt="Lead Leaders company logo in blue and white colors with a leadership icon" class="h-10 w-10">
+            <span class="text-xl font-bold text-blue-600">Lead Leaders</span>
+        </div>
+        <div class="hidden md:flex space-x-8">
+            <a href="index.html" class="text-blue-600 font-medium">Home</a>
+            <a href="tickets.html" class="text-gray-600 hover:text-blue-600">Tickets</a>
+            <a href="departments.html" class="text-gray-600 hover:text-blue-600">Departments</a>
+            <a href="dashboard.html" class="text-gray-600 hover:text-blue-600">Dashboard</a>
+            <a href="contact.html" class="text-gray-600 hover:text-blue-600">Contact</a>
+        </div>
+        <button class="md:hidden text-gray-600">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+    </nav>
 
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Leadleaders - Expert business consulting, strategic planning, and customer support services. Transform your business with our innovative solutions." />
-    <meta name="keywords" content="business consulting, strategic planning, leadership training, customer support, digital transformation" />
-    <meta name="author" content="Leadleaders" />
+    <!-- Hero Section -->
+    <section class="hero-section text-white py-20 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center">
+            <div class="md:w-1/2 mt-10 md:mt-0">
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">Empowering Leaders, Driving Success</h1>
+                <p class="text-lg md:text-xl mb-8">At Lead Leaders, we provide comprehensive solutions to help your business grow with expert leadership across all departments.</p>
+                <div class="flex space-x-4">
+                    <a href="tickets.html" class="btn-primary text-white font-medium py-3 px-8 rounded-full">Submit a Ticket</a>
+                    <a href="departments.html" class="bg-white text-blue-600 font-medium py-3 px-8 rounded-full hover:bg-gray-100">View Departments</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2f29238a-1971-462b-85ef-b19d6475fb9e.png" alt="Team of professionals in a business meeting discussing strategy in a modern office" class="rounded-lg shadow-xl">
+            </div>
+        </div>
+    </section>
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Leadleaders - Business Consulting & Support" />
-    <meta property="og:description" content="Expert business consulting, strategic planning, and customer support services. Transform your business with our innovative solutions." />
-    <meta property="og:image" content="https://cdn.builder.io/api/v1/image/assets%2Fc0b5dede6cf14c76b391d16bf0c6c54e%2F8e2d9ad8617e4cd0b4420a2929dbc6f9?format=webp&width=800" />
+    <!-- Features Section -->
+    <section class="py-16 px-6 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Key Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="bg-blue-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Ticketing System</h3>
+                    <p class="text-gray-600">Efficient issue tracking with our comprehensive ticket management system that connects all departments.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="bg-blue-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Department Support</h3>
+                    <p class="text-gray-600">Dedicated resources and expertise for HR, Sales, Customer Success, and all your business needs.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="bg-blue-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Dashboard Analytics</h3>
+                    <p class="text-gray-600">Comprehensive insights into ticket status, resolutions, and performance metrics with our admin dashboard.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:title" content="Leadleaders - Business Consulting & Support" />
-    <meta property="twitter:description" content="Expert business consulting, strategic planning, and customer support services." />
-    <meta property="twitter:image" content="https://cdn.builder.io/api/v1/image/assets%2Fc0b5dede6cf14c76b391d16bf0c6c54e%2F8e2d9ad8617e4cd0b4420a2929dbc6f9?format=webp&width=800" />
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12 px-6 mt-auto">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Lead Leaders</h3>
+                <p class="text-gray-400">Empowering businesses through exceptional leadership and innovative solutions.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                    <li><a href="tickets.html" class="text-gray-400 hover:text-white">Tickets</a></li>
+                    <li><a href="departments.html" class="text-gray-400 hover:text-white">Departments</a></li>
+                    <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Departments</h3>
+                <ul class="space-y-2">
+                    <li><a href="departments/hr.html" class="text-gray-400 hover:text-white">HR</a></li>
+                    <li><a href="departments/sales.html" class="text-gray-400 hover:text-white">Sales</a></li>
+                    <li><a href="departments/csm.html" class="text-gray-400 hover:text-white">Customer Success</a></li>
+                    <li><a href="departments/marketing.html" class="text-gray-400 hover:text-white">Marketing</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                <p class="text-gray-400 mb-2">123 Business Ave, Suite 500</p>
+                <p class="text-gray-400 mb-2">New York, NY 10001</p>
+                <p class="text-gray-400 mb-2">info@leadleaders.com</p>
+                <p class="text-gray-400">+1 (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+            <p>© 2023 Lead Leaders. All rights reserved.</p>
+        </div>
+    </footer>
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/public/favicon.ico" />
-  </head>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
+        <div class="bg-white h-full w-4/5 max-w-sm p-6 overflow-y-auto">
+            <div class="flex justify-between items-center mb-8">
+                <div class="flex items-center space-x-2">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8165b3e2-da24-4b1c-a081-cc76dedd6d50.png" alt="Lead Leaders company logo" class="h-8 w-8">
+                    <span class="text-lg font-bold text-blue-600">Lead Leaders</span>
+                </div>
+                <button id="closeMenu" class="text-gray-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <ul class="space-y-4">
+                <li><a href="index.html" class="block py-2 font-medium text-gray-700 hover:text-blue-600">Home</a></li>
+                <li><a href="tickets.html" class="block py-2 font-medium text-gray-700 hover:text-blue-600">Tickets</a></li>
+                <li><a href="departments.html" class="block py-2 font-medium text-gray-700 hover:text-blue-600">Departments</a></li>
+                <li><a href="dashboard.html" class="block py-2 font-medium text-gray-700 hover:text-blue-600">Dashboard</a></li>
+                <li><a href="contact.html" class="block py-2 font-medium text-gray-700 hover:text-blue-600">Contact</a></li>
+            </ul>
+        </div>
+    </div>
 
-  <body>
-    <div id="root"></div>
+    <script>
+        // Mobile menu toggle
+        document.querySelector('nav button').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.remove('hidden');
+        });
 
-    <script type="module" src="/client/App.tsx"></script>
-  </body>
+        document.getElementById('closeMenu').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.add('hidden');
+        });
+    </script>
+</body>
 </html>
